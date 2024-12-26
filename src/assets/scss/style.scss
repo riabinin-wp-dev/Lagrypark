@@ -1,0 +1,83 @@
+// @use  'vendor/reset';
+@use 'blocks/vars'as *;
+// @use  "./vendor/animate";
+@use 'fonts'as *;
+@use 'settings'as *;
+@use 'blocks/container'as *;
+@use 'blocks/page'as *;
+@use 'blocks/header'as *;
+@use 'blocks/footer'as *;
+
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: var(--font-family);
+  //  background-color: var(--accent-color);
+}
+
+.main {
+  height: 100%;
+  flex: 1 0 auto;
+}
+
+// ======blocks=========
+
+.aksii-banner__close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 27px;
+  height: 27px;
+  border-radius: 100%;
+  background: #02994b;
+  outline: 0px;
+  padding: 0;
+  border: none;
+  position: absolute;
+  top: 16px;
+  right: 17px;
+  z-index: 2;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.new_sidebar {
+  background: radial-gradient(118.72% 77.26% at -31.77% 50%, #5ec96d 0%, #1d3c21 74.76%);
+  position: absolute;
+  width: 100%;
+  max-width: 439px;
+  // height: 100%;
+  right: 0;
+  top: 0;
+  z-index: 5;
+}
+
+.new_sidebar .img-wrap.center {
+  margin-top: -100px;
+}
+
+.new_sidebar_title span {
+  display: block;
+  font-weight: 800;
+  font-size: 52px;
+  line-height: 83%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.new_sidebar_title {
+  margin: 0;
+  margin-top: -20px;
+  font-weight: 700;
+  font-size: 31px;
+  line-height: 83%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  text-align: center;
+}
